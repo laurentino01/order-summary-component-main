@@ -1,0 +1,150 @@
+/*IMPORTS*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/*VAR*/
+:root {
+  /*Colors*/
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+/*GENERALS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+p {
+  font-size: clamp(14px, 2vw, 16px);
+  color: var(--DesaturatedBlue);
+}
+h1 {
+  font-size: clamp(22px, 5vw, 24px);
+  color: var(--DarkBlue);
+}
+h2 {
+  font-size: clamp(14px, 2vw, 16px);
+  color: var(--DarkBlue);
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100vh;
+}
+
+/*BACKGROUND*/
+.bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--PaleBlue);
+  position: absolute;
+  z-index: -2;
+}
+.bg__desk {
+  width: 100%;
+  margin-top: -100px;
+}
+.bg__mobile {
+  width: 100%;
+  display: none;
+}
+
+/*CARD*/
+.card {
+  width: 300px;
+  border-radius: 15px;
+  flex-direction: column;
+  background-color: var(--VeryPaleBlue);
+  box-shadow: 2px 5px 20px 2px hsla(245, 75%, 52%, 0.096);
+}
+
+.card > img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 150px;
+}
+
+.card__body {
+  padding: 20px;
+  text-align: center;
+}
+.card__body > h1 {
+  margin: 10px 0;
+}
+.card__offer {
+  margin: 30px 0;
+  justify-content: space-between;
+}
+.card__offer > * {
+  margin-left: 10px;
+}
+.card__offer img {
+  width: 50px;
+  height: 50px;
+}
+.card__offer__content {
+  margin-left: -10px;
+  flex-direction: column;
+}
+.card__offer a {
+  color: var(--BrightBlue);
+}
+.card__offer a:hover {
+  color: hsla(245, 75%, 52%, 0.582);
+  transition: 0.5s;
+}
+.card__btns button {
+  width: 100%;
+  color: var(--VeryPaleBlue);
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: var(--BrightBlue);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 2px 5px 20px 2px hsla(245, 75%, 52%, 0.096);
+}
+.card__btns a {
+  color: var(--BrightBlue);
+}
+.card__btns a:hover {
+  color: var(--DarkBlue);
+  transition: 0.5s;
+}
+.card__btns button:hover {
+  background-color: hsla(245, 75%, 52%, 0.582);
+  transition: 0.5s;
+}
+@media (max-width: 376px) {
+  .bg {
+    top: 0;
+  }
+  .bg .bg__desk {
+    display: none;
+  }
+  .bg .bg__mobile {
+    display: block;
+  }
+}
+/* att*/
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

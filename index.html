@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container d-flex">
+      <div class="bg">
+        <svg xmlns="http://www.w3.org/2000/svg" height="437" class="bg__desk">
+          <path
+            fill="#D6E1FF"
+            fill-rule="evenodd"
+            d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"
+          />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="194" class="bg__mobile">
+          <path
+            fill="#D6E1FF"
+            fill-rule="evenodd"
+            d="M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z"
+          />
+        </svg>
+      </div>
+      <div class="card d-flex">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="Ilustração de mulher escutando música"
+        />
+        <div class="card__body">
+          <h1>Order Summary</h1>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="card__offer d-flex">
+            <img
+              src="./images/icon-music.svg"
+              alt="Icone circular de nota musical"
+            />
+            <div class="card__offer__content d-flex">
+              <h2>Annual Plan</h2>
+              <p>$59.99/year</p>
+            </div>
+
+            <a href="#">Change</a>
+          </div>
+          <div class="card__btns">
+            <button>Proceed to Payment</button>
+            <a href="#">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Gabriel</a>.
+    </div>
+  </body>
+</html>
