@@ -80,21 +80,22 @@ h2 {
   margin: 10px 0;
 }
 .card__offer {
-  margin: 30px 0;
+  margin: 40px 0;
   justify-content: space-between;
 }
 .card__offer > * {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 .card__offer img {
   width: 50px;
   height: 50px;
 }
 .card__offer__content {
-  margin-left: -10px;
+  margin-left: -20px;
   flex-direction: column;
 }
 .card__offer a {
+  font-size: 12px;
   color: var(--BrightBlue);
 }
 .card__offer a:hover {
